@@ -1,0 +1,180 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Computer Vision at University of Virginia</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Computer Vision Lab at the University of Virginia">
+      <meta name="author" content="">
+      <!-- Le styles -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+      <link href="css/theme.css" rel="stylesheet">
+      <!-- Under Construction Starts -->
+      <style>
+         .under-construction {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+         }
+         body {
+            padding-top: 0px; /* Adjust for the fixed banner */
+         }
+         .navbar .nav {
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap */
+            padding-left: 0;
+            list-style: none;
+            justify-content: center; /* Centers the navigation bar */
+        }
+
+        .navbar .nav li {
+            flex: 1 1 16%; /* Each navigation item initially takes up 16% width, can adjust */
+            text-align: center;
+            min-width: 120px; /* Sets a minimum width to allow wrapping on smaller screens */
+            border-bottom: 1px solid #ddd; /* Adds a horizontal line below each navigation item */
+        }
+
+        .navbar .nav a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .navbar .nav a:hover {
+            background-color: #f8f9fa;
+            color: #007bff;
+        }
+
+        @media (max-width: 768px) {
+            .navbar .nav li {
+                flex: 1 1 30%; /* Displays two navigation items per row on smaller screens */
+            }
+        }
+         </style>
+      <!-- Under Construction Ends -->
+   </head>
+   <body>
+      <div class="container">
+         <header class="jumbotron subhead" id="overview">
+            <h1>Computer Vision Lab</h1>
+            <p class="lead"> University of Virginia </p>
+         </header>
+         <div class="masthead">
+            <div class="navbar">
+               <div class="navbar-inner">
+                  <div class="container">
+                     <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="teaching.html">Teaching</a></li>
+                        <!-- <li class="active"><a href="#">Lab Fun</a></li> -->
+                        <li><a href="contact.html">Join Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      <div class="row-fluid">
+            <div class="span3 bs-docs-sidebar" id="navparent">
+               <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
+                  <!-- <li><a href="#ke142"> KE 142: Tortor Vitae Purus</a></li>
+                  <li><a href="#ke121"> KE 121: Ullamcorper Malesuada</a></li> -->
+               </ul>
+            </div>
+            <div class="span8 offset1">
+               <!-- <section id="ke142">
+                  <div class="page-header">
+                     <h3><a href="">KE 142: Tortor Vitae Purus</a></h3>
+                     <hr>
+                     <p>Quam viverra orci sagittis eu volutpat odio. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc. </p>
+                     <p><b>Prerequisite: </b><a href=""><b>ME 310</b></a> and <a href=""><b>ME 320</b></a>.</p>
+                     <p><b>Semesters Taught:</b> Fall 2018.</p>
+                     <p><b>Course Information:</b> <a href="">Syllabus</a></p>
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th>#</th>
+                              <th>Lecture</th>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>1</td>
+                              <td><a href="">Pretium Lectus Quam</a></td>
+                           </tr>
+                           <tr>
+                              <td>2</td>
+                              <td><a href="">Urna porttitor: Rhoncus dolor purus non enim praesent elementum facilisis.</a></td>
+                           </tr>
+                           <tr>
+                              <td>3</td>
+                              <td><a href="">Diam in arcu: Cursus euismod quis viverra nibh cras.</a></td>
+                           </tr>
+                           <tr>
+                              <td>4</td>
+                              <td><a href="">Tristique: Sollicitudin nibh sit amet commodo. </a></td>
+                           </tr>
+                           <tr>
+                              <td>5</td>
+                              <td><a href="">Risus: Viverra adipiscing at in tellus integer. </a></td>
+                           </tr>
+                           <tr>
+                              <td>6</td>
+                              <td><a href="">Mus mauris vitae ultricies leo.</a></td>
+                           </tr>
+                           <tr>
+                              <td>7</td>
+                              <td><a href="">Sed faucibus turpis in eu mi bibendum neque egestas. </a></td>
+                           </tr>
+                           <tr>
+                              <td>8</td>
+                              <td><a href="">Viverra aliquet eget sit amet tellus.</a></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </section>
+               <section id="ke121">
+                  <div class="page-header">
+                     <h3><a href="">KE 121: Ullamcorper Malesuada</a></h3>
+                     <hr>
+                     <p>Morbi enim nunc faucibus a pellentesque sit amet porttitor eget. Aliquet bibendum enim facilisis gravida. </p>
+                     <p><b>Prerequisite:</b> Mus mauris vitae.</p>
+                     <p><b>Semesters Taught:</b> Fall 2018.</p>
+                  </div>
+               </section> -->
+            </div>
+         </div>
+      </div>
+
+      <footer id="footer">
+        <p>© 2024 Computer Vision Lab @ UVA</p>
+      </footer>
+      <!-- Le javascript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+         $(document).ready(function() {
+             $(document.body).scrollspy({
+                 target: "#navparent"
+             });
+         });
+         
+      </script>
+   </body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Computer Vision at University of Virginia</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Computer Vision Lab at the University of Virginia">
+      <meta name="author" content="">
+      <!-- Le styles -->
+      <link href="../../css/bootstrap.min.css" rel="stylesheet">
+      <link href="../../css/bootstrap-responsive.min.css" rel="stylesheet">
+      <link href="course.css" rel="stylesheet">
+      <!-- Under Construction Starts -->
+      <style>
+         .under-construction {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+         }
+         body {
+            padding-top: 0px; /* Adjust for the fixed banner */
+         }
+         p{
+           line-height: 1.2;
+         }
+
+         li{
+           line-height: 1.2;
+         }
+
+				img {
+				}
+         </style>
+      <!-- Under Construction Ends -->
+   </head>
+   <body>
+      <div class="container">
+         <header class="jumbotron subhead" id="overview">
+            <h1>CS 6501 3D Computer Vision (Fall 2024)</h1>
+            <p class="lead"> University of Virginia </p>
+         </header>
+         <div class="masthead">
+            <div class="navbar">
+               <div class="navbar-inner">
+                  <div class="container">
+                     <ul class="nav">
+                        <li><a href="index.html">Overview</a></li>
+                        <li><a href="logistics.html">Logistics</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <!-- <li><a href="homework.html">Homework</a></li> -->
+                        <li class="active"><a href="#">Project</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+			<div class="row-fluid">
+					<div class="span12">
+							<h3 class="post-description">Guidelines and suggestions for course projects</h3>
+								<p>
+                  Your course project provides an opportunity for you to explore an interesting problem in area of 3D computer vision.
+                  Any topics in 3D vision, such as multiview 3D reconstruction, camera pose estimation, the interection of natual language processing and 3D vision, 
+                  the applications of 3D vision in other domains (e.g. robotics, ecology), 3D recognition from images or point clouds, are all acceptable. 
+                  A comprehensive topics in 3D vision can be found <a href="https://3dvconf.github.io/2025/call-for-papers/" traget="_blank">here</a>. 
+                  Your project will be worth 50% of your final class grade, and will have four deliverables:
+                </p>
+
+						<ol>
+							<li><strong>Proposal presentation</strong> : slides (5%)</li>
+							<li><strong>Proposal abstract</strong> : 2 pages excluding references (10%)</li>
+							<li><strong>Final Presentation</strong> : slides (15%)</li>
+							<li><strong>Final Report</strong> : 8 pages excluding references (20%)</li>
+						</ol>
+
+						<p>All write-ups should use the <a href="https://cvpr2022.thecvf.com/sites/default/files/2021-10/cvpr2022-author_kit-v1_1-1.zip">CVPR style</a>.</p>
+
+						<hr />
+
+						<ul id="markdown-toc">
+							<li><a href="#team-formation" id="markdown-toc-team-formation">Team Formation</a></li>
+							<li><a href="#scope" id="markdown-toc-scope">Scope</a></li>
+							<li><a href="#project-proposal" id="markdown-toc-project-proposal">Project Proposal</a></li>
+							<li><a href="#final-report" id="markdown-toc-final-report">Final Report</a></li>
+							<li><a href="#presentation" id="markdown-toc-presentation">Presentation</a></li>
+							<li><a href="#project-suggestions" id="markdown-toc-project-suggestions">Project Suggestions</a></li>
+							<li><a href="#computing-resources" id="markdown-toc-computing-resources">Computing Resources</a></li>
+						</ul>
+
+						<hr />
+
+						<h3 id="team-formation">Team Formation</h3>
+
+						<p>You are responsible for forming project teams of two or three people.
+						In some cases, we will also accept smaller or larger teams, but a 2-3 person group is preferred.
+						If you have trouble forming a group, please send us an email and we
+						will help you find project partners.</p>
+
+						<h3 id="scope">Scope</h3>
+
+						<p>As a broad target, the final project should involve approximately as
+						much work as a homework assignment in a typical graduate-level course for each student in the
+						group. Thus the total work should scale roughly linearly with the
+						group size, and be distributed roughly equally. An ambitious,
+						well-done project from a group of two should be
+						on the order of a conference paper in depth of experimentation.</p>
+
+						<h3 id="project-proposal">Project Proposal</h3>
+
+						<p>
+                You must turn in a brief project proposal that provides an overview of your idea and also contains a brief survey of related work on the topic.
+                We will provide a list of suggested project ideas for you to choose from.
+                However, you're very encouraged to find project ideas that you are excited about.
+                A great starter is the papers we will discuss in our courses. 
+                We will provide feedbacks based on your project proposals and presentation. 
+						</p>
+
+						<p>Proposals should be approximately <strong>two pages long</strong>, and should include the following information:</p>
+
+						<ul>
+							<li>Project title and list of group members.</li>
+							<li>Overview of project idea. This should be approximately half a page long.</li>
+							<li>A short literature survey of 4 or more relevant papers. The literature review should take up approximately one page.</li>
+							<li>Description of potential data sets to use for the experiments.</li>
+							<li>Plan of activities, including what you plan to complete by the
+						presentation date and how you plan to divide up the work.</li>
+						</ul>
+
+						<p>The grading breakdown for the proposal is as follows:</p>
+
+						<ul>
+							<li>40% for clear and concise description of proposed method</li>
+							<li>40% for literature survey that covers at least 4 relevant papers</li>
+							<li>10% for plan of activities</li>
+							<li>10% for quality of writing</li>
+						</ul>
+
+						<p>The project proposal will be due at <strong>11:59 PM on Monday, October
+						14</strong>, and must be submitted via <a href="https://www.gradescope.com/courses/828017" target="_blank">Gradescope</a>.</p>
+
+						<h3 id="final-report">Final Report</h3>
+
+						<p>Your final report is expected to be <strong>8 pages excluding references</strong>,
+						in accordance with the length requirements for a CVPR paper. It
+						should have roughly the following format:</p>
+
+						<ul>
+							<li>Introduction: problem definition and motivation</li>
+							<li>Background &amp; Related Work: background info and literature survey</li>
+							<li>Methods
+								<ul>
+									<li>Overview of your proposed method</li>
+									<li>Intuition on why should it be better than the state of the art</li>
+									<li>Details of models and algorithms that you developed</li>
+								</ul>
+							</li>
+							<li>Experiments
+								<ul>
+									<li>Description of your testbed and a list of questions your experiments are designed to answer</li>
+									<li>Details of the experiments and results</li>
+								</ul>
+							</li>
+							<li>Conclusion: discussion and future work</li>
+						</ul>
+
+						<p>The grading breakdown for the final report is as follows:</p>
+
+						<ul>
+							<li>10% for introduction and literature survey</li>
+							<li>30% for proposed method (soundness and originality)</li>
+							<li>30% for correctness, completeness, and difficulty of experiments and figures</li>
+							<li>10% for empirical and theoretical analysis of results and methods</li>
+							<li>20% for quality of writing (clarity, organization, flow, etc.)</li>
+						</ul>
+
+						<p>The project final report will be due at <strong>11:59 PM on Monday, December
+						17</strong>, and must be submitted via <a href="https://www.gradescope.com/courses/828017" target="_blank">Gradescope</a>.</p>
+
+						<p><em>Note that late days do not apply to the final report.</em></p>
+
+						<h3 id="presentation">Presentation</h3>
+
+						<p> 
+						Presentation skill is critical in your career. A good presentation should convey your project to the target audience clearly and efficiently. 
+						Our course provides many great opportunies for you to practice, such as paper presentation, project proposal presentation, and final project presentation.
+						</p>
+
+						<hr />
+
+						<h3 id="project-suggestions">Project Suggestions</h3>
+						<p>You are encouraged to propose your own topics. Below are some general suggestions and constraints:</p>
+						<ul>
+              <li>Your project has to be related to 3D computer vision. The papers we discuss in our classes are great reference.</li>
+              <li>You should be excited about your project. Do not spend time on something you don’t like.</li>
+              <li>You should be comfortable about the uncertainty. Your project won't be rated by how good your experimental results are, instead, the insight you gain from your project. </li>
+							<li>Read the latest papers from CVPR, ECCV, ICCV, and 3DV to find topics, software, datasets which you can build upon.</li>
+							<li>The website <a href="https://paperswithcode.com">https://paperswithcode.com</a> tracks the state of the art across datasets. This is a quick way to
+						find baselines to compare with or build upon.</li>
+						</ul>
+
+						<hr />
+
+						<h3 id="computing-resources">Computing Resources</h3>
+
+						<p>Some vision projects may involve large scale data and require GPU
+						computing resources. We recommend you to check out “AWS Education” and
+						“Google Cloud Platform”.</p>
+
+						<ul>
+							<li>AWS:
+						<a href="https://aws.amazon.com/education/awseducate">https://aws.amazon.com/education/awseducate</a>
+								<ul>
+									<li>UVA is an “AWS member institution”, so you are in the higher
+						allowance tier. Use your .edu email and the full school name
+						“University of Virginia” when you register to get the
+						full benefits (a total of $100 annually).</li>
+									<li>To get GPUs, use g3 (up to 4 NVIDIA Tesla M60 GPUs) or p2 (up to 16
+						NVIDIA K80 GPUs) instances in EC2. Check the pricing first and make
+						your plan accordingly!</li>
+								</ul>
+							</li>
+							<li>Google Cloud Platform:
+						<a href="https://cloud.google.com">https://cloud.google.com</a>
+								<ul>
+									<li>You get $300 credits for the first 12 months, and always free on
+						their free-tier resources (not including GPUs)</li>
+								</ul>
+							</li>
+						</ul>
+
+
+
+
+
+					</div>
+			</div>
+		</div>
+
+      <footer id="footer">
+        <p>© 2024 Computer Vision Lab @ UVA</p>
+      </footer>
+      <!-- Javascript files -->
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script> $('#main-carousel').carousel(); </script>
+   </body>
+</html>

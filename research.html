@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Computer Vision at University of Virginia</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Computer Vision Lab at the University of Virginia">
+      <meta name="author" content="">
+      <!-- Le styles -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+      <link href="css/theme.css" rel="stylesheet">
+      <!-- Under Construction Starts -->
+      <style>
+         .under-construction {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+         }
+         body {
+            padding-top: 0px; /* Adjust for the fixed banner */
+         }
+         .navbar .nav {
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap */
+            padding-left: 0;
+            list-style: none;
+            justify-content: center; /* Centers the navigation bar */
+        }
+
+        .navbar .nav li {
+            flex: 1 1 16%; /* Each navigation item initially takes up 16% width, can adjust */
+            text-align: center;
+            min-width: 120px; /* Sets a minimum width to allow wrapping on smaller screens */
+            border-bottom: 1px solid #ddd; /* Adds a horizontal line below each navigation item */
+        }
+
+        .navbar .nav a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .navbar .nav a:hover {
+            background-color: #f8f9fa;
+            color: #007bff;
+        }
+
+        @media (max-width: 768px) {
+            .navbar .nav li {
+                flex: 1 1 30%; /* Displays two navigation items per row on smaller screens */
+            }
+        }
+         </style>
+      <!-- Under Construction Ends -->
+   </head>
+   <body>
+      <div class="container">
+         <header class="jumbotron subhead" id="overview">
+            <h1>Computer Vision Lab</h1>
+            <p class="lead"> University of Virginia </p>
+         </header>
+         <div class="masthead">
+            <div class="navbar">
+               <div class="navbar-inner">
+                  <div class="container">
+                     <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li class="active"><a href="#">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="teaching.html">Teaching</a></li>
+                        <!--<li><a href="fun.html">Lab Fun</a></li>-->
+                        <li><a href="contact.html">Join Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="row-fluid">
+           
+            <div class="span2 bs-docs-sidebar" id="navparent">
+               <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
+                  <li><a href="#"> Research Focus </a></li>
+                  <li><a class="subhead" href="#selfsup"> Label-efficient Learning </a></li>
+                  <li><a class="subhead" href="#3d"> Recon. and Recog. in 3D  </a></li>
+                  <li><a class="subhead" href="#cross"> Computer Vision + X </a></li>
+               </ul>
+            </div>
+            <div class="span9 offset1">
+
+               <section id="selfsup">
+                  <div class="page-header">
+                     <h3>Label-efficient Visual Understanding</h3>
+                    <img  src="images/tasks.png" alt="Vision tasks"/>
+                     <p> The cost of collecting human annotations is a significant barrier in many vision tasks.
+                     For example, annotating the landmarks or semantic parts of an object is much more time-consuming than categorizing the image; annotating the 3D pose of an object is often done by reasoning with 3D model's projection to the 2D image; annotating objects with fine-grained labels (e.g. Grasshopper sparrow vs. Lincoln's sparrow) requires strong domain-specific expertise. In addition, labeling without clearly defined protocols leads to a variation in labeling styles of different annotators, which can make subsequent learning harder. </p>
+                    <img  src="images/label-efficient-website.png" alt="Vision tasks"/>
+                    <p> To minimize the annotation cost, one of our research goals is to develop learning algorithms in the context of different vision tasks to reduce the cost of supervision and allow learning from different labeling styles.</p>
+                    <!-- <p> <b>[Ongoing projects]</b> Our recent efforts in this direction include developing various label-efficient training algorithms in the context of modern vision tasks, such as vision-language models and open-vocabulary 3D recognition and reconstruction.</p> -->
+											<h4> List of publications: </h4>
+												<ol> 
+														<li> Saha et al. Improving Few-Shot Part Segmentation using Coarse Supervision. ECCV 2022 </li>
+														<li> Saha et al. GANORCON: Are Generative Models Useful for Few-shot Segmentation? CVPR 2022 </li>
+														<li> Cheng et al. On Equivariant and Invariant Learning of Object Landmark Representations. ICCV 2021 </li>
+														<li> Su et al. A Realistic Evaluation of Semi-Supervised Learning for Fine-Grained Classification. CVPR 2021  </li>
+														<li> Cheng et al. A Bayesian Perspective on the Deep Image Prior. CVPR 2019 </li>
+												</ol>
+                  </div>
+               </section>
+
+               <section id="3d">
+                  <div class="page-header">
+                     <h3>Reconstruct and Recognize Anything in 3D</h3>
+                    <img  src="images/3d.png" alt="3D"/>
+                    <p> Our research goal in this thrust is to build a system capable of holistic 3D scene understanding and reconstruction. 
+                    We humans have a holistic understanding of the 3D visual world --- we can easily perceive the object categories, their location, and shapes and even interact with them.
+                    This is a fundamental capability required of intelligent agents to navigate and interact with the 3D environment. 
+                    Besides this, reconstructing a realistic and immersive virtual 3D world has many applications in VR/AR, robotics, and autonomous driving. 
+                    </p>
+                    <p>However, such holistic 3D scene understanding and generation are beyond the current state-of-the-art computer vision systems.
+                    There are several critical challenges to address.
+                    First, scene understanding and 3D reconstruction are usually studied separately, which we believe should be integrated in a way that they are mutually beneficial; 
+                    Second, compared to 2D tasks, the lack of human annotations becomes even more problematic for 3D tasks (e.g., 3D object detection and segmentation, 3D pose estimation);
+                    Third, unlike 2D images, 3D models are expensive to acquire, especially for deformable objects such as animals; </p>
+                    <p>
+                    We aim to build a system to holistically understand and reconstruct the 3D scene with minimal human supervision. 
+                    </p>
+                    <!-- <p> <b>[Ongoing projects]</b>  We're developing algorithms to minimize the human annotation cost for open-vocabulary monocular 3D recognition tasks, and we're also building systems for joint semantic and geometry understanding. We are also interested in 3D recontruction and tracking in dynamic scenes.</p> -->
+											<h4> List of publications: </h4>
+												<ol> 
+														<li> Cheng et al. LU-NeRF: Scene and Pose Estimation by Synchronizing Local Unposed NeRFs. ICCV 2023 </li>
+														<li> Cheng et al. Accidental Turntables: Learning 3D Pose by Watching Objects Turn. ICCV-W 2023 </li>
+														<li> Cheng et al. Cross-Modal 3D Shape Generation and Manipulation. ECCV 2022 </li>
+												</ol>
+                  </div>
+               </section>
+
+               <section id="cross">
+                  <div class="page-header">
+                     <h3>Computer Vision + X</h3>
+                    <img  src="images/cv_x.png" alt="3D"/>
+                    <p> Recent years have witnessed significant advancements in computer vision, with its applications extending across a broad range of industries and research areas. In our previous research, we have leveraged these advancements to develop efficient computer vision models for diverse fields. For instance, we analyzed two decades of extensive radar data to study bird migration patterns in ecology and developed machine learning models to predict hydrocarbon adsorption in zeolites for chemical research. </p>
+                    <p> We are enthusiastic about building multidisciplinary collaboration and promoting the application of AI across various scientific fields including but not limited to robotics, natual language processing, climate change, and material discovery. Welcome to talk with us and explore potential cross-field collaboration opportunities!</p>
+										<h4> List of publications: </h4>
+												<ol> 
+														<li> Perez et al. Using spatio-temporal information in weather radar data to detect and track communal bird roosts. Remote Sensing in Ecology and Conservation. 2024 </li>
+														<li> Liu et al. ZeoNet: 3D convolutional neural networks for predicting adsorption in nanoporous zeolites. Journal of Materials Chemistry A, 2023 </li>
+														<li> Zhao et al. A Semi-Automated System to Annotate Communal Roosts in Large-Scale Weather Radar Data. NeurIPS Computational Sustainability: Pitfalls and Promises from Theory to Deployment, 2023 </li>
+														<li> Belotti et al. Long-term analysis of persistence and size of swallow and martin roosts in the US Great Lakes. Remote Sensing in Ecology and Conservation, 2022 </li>
+														<li> Deng et al. Quantifying Long-term Phenological Patterns of Aerial Insectivores Roosting in the Great Lakes Region using Weather Surveillance Radar. Global Change Biology, 2022 </li>
+														<li> Cheng et al. AI for conservation: learning to track birds with radar.  ACM XRDS 2021 </li>
+														<li> Cheng et al. Detecting and Tracking Communal Bird Roosts in Weather Radar Data. AAAI 2020 </li>
+												</ol>
+										</div>
+                  </div>
+               </section>
+
+            </div>
+         </div>
+      </div>
+
+      <footer id="footer">
+        <p>© 2024 Computer Vision Lab @ UVA</p>
+      </footer>
+      <!-- Le javascript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+         $(document).ready(function() {
+             $(document.body).scrollspy({
+                 target: "#navparent"
+             });
+         });
+         
+					var coll = document.getElementsByClassName("collapsible");
+					var i;
+
+					for (i = 0; i < coll.length; i++) {
+						coll[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var content = this.nextElementSibling;
+							if (content.style.maxHeight){
+								content.style.maxHeight = null;
+							} else {
+								content.style.maxHeight = content.scrollHeight + "px";
+							} 
+						});
+					}
+
+      </script>
+   </body>
+</html>
