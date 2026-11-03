@@ -2,7 +2,7 @@
 .row-fluid.member-grid {
     display: grid;
     grid-template-columns: 140px minmax(0, 1fr) 140px minmax(0, 1fr);
-    column-gap: 40px;
+    column-gap: 24px;
     row-gap: 72px;
     margin: 0 0 72px;
     align-items: start;
@@ -20,17 +20,23 @@
 #principalinvestigator .member-grid {
     grid-template-columns: 140px minmax(0, 1fr);
 }
-.member-grid h4 { margin: 0 0 12px; }
-.member-grid p { margin-bottom: 12px; line-height: 1.6; }
-.member-grid ul { width: auto; margin: 0 0 16px 20px; padding: 0; }
-.member-grid li { line-height: 1.6; }
+.member-grid h4 { margin: 0 0 6px; }
+.member-grid p { margin-bottom: 6px; line-height: 1.45; }
+.member-grid ul { width: auto; margin: 0 0 8px 20px; padding: 0; }
+.member-grid li { line-height: 1.45; margin-bottom: 0; }
 .member-grid a { overflow-wrap: anywhere; }
 .member-grid img, .member-grid svg { display: block; max-width: 100%; }
+/* Preserve separation between the two members while tightening portrait spacing. */
+@media (min-width: 992px) {
+    .member-grid > :nth-child(4n + 2) {
+        padding-right: 16px;
+    }
+}
 @media (max-width: 991px) {
     .row-fluid.member-grid,
     #principalinvestigator .member-grid {
         grid-template-columns: 120px minmax(0, 1fr);
-        column-gap: 28px;
+        column-gap: 20px;
         row-gap: 56px;
         margin-bottom: 56px;
     }
@@ -39,6 +45,6 @@
     .row-fluid.member-grid,
     #principalinvestigator .member-grid {
         grid-template-columns: 88px minmax(0, 1fr);
-        column-gap: 20px;
+        column-gap: 16px;
     }
 }
