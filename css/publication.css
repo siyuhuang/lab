@@ -66,8 +66,17 @@
     text-decoration: underline;
 }
 
+/* Reserve the image column for publications awaiting a teaser. */
+.teaser-placeholder {
+    flex-shrink: 0;
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
+    .teaser-placeholder {
+        display: none;
+    }
+
     .paper {
         flex-direction: column;
         width: 90%;
