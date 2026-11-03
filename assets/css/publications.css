@@ -13,6 +13,16 @@
     min-width: 0;
 }
 
+.paper > .span4 > .publication-image {
+    display: block;
+}
+
+@media (min-width: 769px) {
+    .paper > .span4 {
+        align-self: center;
+    }
+}
+
 .publication-image {
     width: 100%;
     height: auto;
