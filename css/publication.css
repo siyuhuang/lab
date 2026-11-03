@@ -1,5 +1,6 @@
 .paper {
     background-color: #f8f8f8;
+    box-sizing: border-box;
     width: 100%;
     margin: 10px auto;
     padding: 20px;
@@ -8,10 +9,15 @@
     flex-direction: row;
 }
 
+.paper > div {
+    min-width: 0;
+}
+
 .publication-image {
-    margin-right: 50px;*/ /* Space between image and content */
-    width: auto;
-    /*height: auto;*/
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
 }
 
 .aspect-ratio-box {
