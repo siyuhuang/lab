@@ -2,9 +2,9 @@
 .row-fluid.member-grid {
     display: grid;
     grid-template-columns: 140px minmax(0, 1fr) 140px minmax(0, 1fr);
-    column-gap: 32px;
-    row-gap: 48px;
-    margin: 0 0 48px;
+    column-gap: 40px;
+    row-gap: 72px;
+    margin: 0 0 72px;
     align-items: start;
 }
 .row-fluid.member-grid::before,
@@ -31,8 +31,8 @@
     #principalinvestigator .member-grid {
         grid-template-columns: 120px minmax(0, 1fr);
         column-gap: 28px;
-        row-gap: 36px;
-        margin-bottom: 36px;
+        row-gap: 56px;
+        margin-bottom: 56px;
     }
 }
 @media (max-width: 480px) {
