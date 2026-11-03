@@ -1,2 +1,7 @@
 # Ignore IDE configuration folder
 .idea/
+# Local operating-system, Python, and build artifacts
+.DS_Store
+__pycache__/
+*.pyc
+_site/

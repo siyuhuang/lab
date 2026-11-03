@@ -1,6 +1,6 @@
 ## TODO
 
-project.html: 
+project.html:
 * build some templates:
     - paper presentation slide template (title, author, motivation, methodology etc), share a google doc, refer to some CVPR oral presentations, or [Georgia's lecture](https://docs.google.com/spreadsheets/d/1TyeekhGqWQhUjdvz3jPoj-NgDZQhp1_I8fCHVlMJE6o/edit?gid=0#gid=0).
     - paper presentation sign-up sheet, refer to [Georgia's lecture](https://docs.google.com/spreadsheets/d/1TyeekhGqWQhUjdvz3jPoj-NgDZQhp1_I8fCHVlMJE6o/edit?gid=0#gid=0)
@@ -9,7 +9,7 @@ project.html:
 
 
 logistics.html
-* attendance 
+* attendance
     - before each lecture, submit a summary of the paper
     - after each lecture, submit a feedback to the presenters
     - here is a [template](https://www.overleaf.com/read/kgpdwygzfpdh#b252b0)
@@ -19,7 +19,7 @@ logistics.html
 index.html
 * get some feedback from the students
     - figure out how to allow students to give anonymous feedback on canvas
-* decide the office hour (address and time slots) 
+* decide the office hour (address and time slots)
 
 
 double check the calender

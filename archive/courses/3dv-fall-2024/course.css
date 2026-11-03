@@ -597,7 +597,7 @@ ul#pc li {
     height: 33px;
     margin: 0 0 30px 0;
     padding: 10px 15px 0 15px;
-    background: url(images/img6.gif) repeat-x;
+    background: url("../../../teaching/3dv_fall24/images/img6.gif") repeat-x;
     border-bottom: 1px solid #F2F2F2;
 }
 
@@ -1219,7 +1219,7 @@ a.tosu {
 }
 
 h2.course-info {
-    
+
     font-size: 26px;
     padding: 20px 0 0 0;
 }
